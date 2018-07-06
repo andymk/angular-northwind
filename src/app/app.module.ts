@@ -6,7 +6,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './components/app/app.component';
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
+
 import { CategoryModule } from './components/categories/category.module';
+import { SupplierModule } from './components/suppliers/supplier.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { CategoryModule } from './components/categories/category.module';
       { path: 'home', component: HomeComponent },
       { path: '**', redirectTo: 'home' }
     ]),
-    CategoryModule
+    CategoryModule,
+    SupplierModule
   ],
   providers: [],
   bootstrap: [AppComponent]
