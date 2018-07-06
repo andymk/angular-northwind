@@ -9,7 +9,7 @@ import { ISupplier } from "../domain/isupplier";
 })
 export class SuppliersService {
 
-  private _listUrl: string = "http://localhost:51798/api/supplier";
+  private _listUrl: string = "http://localhost:51798/api/suppliers";
 
   constructor(private _http: HttpClient) {
 
